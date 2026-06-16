@@ -2,7 +2,6 @@
 //generate a random number
 function getComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 100 + 1);
-  console.log(randomNumber);
   //map each number to either rock/paper/scissor
   let computerChoice = "";
   if (randomNumber >= 0 && randomNumber <= 30) {
@@ -12,7 +11,7 @@ function getComputerChoice() {
   } else {
     computerChoice = "scissors";
   }
-  console.log(computerChoice);
+  console.log(`Computer picked ${computerChoice}`);
   return computerChoice;
 }
 
